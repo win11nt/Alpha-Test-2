@@ -6,7 +6,7 @@ This project focuses on implementing desktop UI layouts and basic interactive fe
 ---
 
 ## 📁 Project Structure
-
+```
 Alpha-Test-2/
 │
 ├── assets/ # Images, videos
@@ -20,7 +20,7 @@ Alpha-Test-2/
 │
 ├── index.html # Main entry file
 └── README.md
-
+```
 ---
 
 ## 🚀 Technologies Used
