@@ -1,0 +1,121 @@
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.aeonik {
+    font-family: 'Aeonik', sans-serif;
+}
+
+.arizona-flare {
+    font-family: 'ABC Arizona Flare', serif;
+}
+
+.underline-animate {
+    position: relative;
+}
+
+.underline-animate::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #50000B;
+    transition: width 0.3s ease;
+}
+
+.underline-animate:hover::after {
+    width: 100%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 50;
+    max-height: calc(100vh - 100px);
+    /* khoảng cách với header */
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Width của scrollbar */
+.dropdown-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track (nền phía sau) */
+.dropdown-content::-webkit-scrollbar-track {
+    background: #f3e6e6;
+    border-radius: 8px;
+}
+
+/* Thanh kéo */
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #A40011;
+    /* đỏ như hình */
+    border-radius: 8px;
+}
+
+/* Hover vào thanh kéo */
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background-color: #7a000d;
+}
+
+.selected {
+    border: 1px solid #50000B;
+}
+
+.product-option.selected {
+    border: 1px solid #50000B;
+    background-color: #fdf2f1;
+}
+
+.reviewsSwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.organ-card-active {
+    color: #fff;
+    border: 1px solid;
+    background: linear-gradient(145deg,
+            #b30b16 0%,
+            #6e0b12 60%,
+            #3a0609 100%);
+    border-color: #b30b16;
+}
+
+.organ-card-active .arrow-icon {
+    opacity: 1;
+    color: var(--color-gray-400);
+}
